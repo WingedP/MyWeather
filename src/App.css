@@ -1,38 +1,221 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Domine:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap');
+
+
+
+@media only screen and (min-width: 900px) {
+    .nasa-section-title{
+        font-size: 2.3rem !important;
+    }   
+    .weatherapp{
+/* background: rgb(165, 109, 109); */
+padding-left: 20rem !important;
+padding-right: 20rem !important;
+    }
+    .bgimg{
+        top: -30rem !important;
+        width: 100% !important;
+    }
+.description{
+font-size: 2rem !important;
+}
+    .temp{
+        margin-left: 0% !important;
+        margin-right: 0% !important;
+    }
+
+    }
+
+@media only screen and (max-width: 380px) {
+.weatherapp{
+    height: 240% !important;
+    /* background: red; */
+    margin-bottom: 7rem !important;
+}
+.bgimg{
+    top: -10rem !important;
+height: 150%;}
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.weatherapp{
+padding: 2rem;
+position: relative;
+overflow: hidden !important;
+}
+.bgimg{
+    top: -10rem !important;
+    left: 0;
+    width: 100%;
+    position: absolute;
+z-index: -1;
+}
+.weather-section{
+    text-align: center;
+    /* border: 2px solid black; */
+    /* background: aqua; */
+}
+.nasa-section{
+/* background: blue */
+margin-top: 1rem;
+box-shadow: 1px 2px 5px 3px rgba(0,0,0,0.75);
+padding-left: .5rem;
+padding-right: .5rem;
+padding-bottom: 1rem;
+height: fit-content !important;
+border: 1px solid gray;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+#ytplayer{
+    width: 100%;
+    height: 56.25vw;}
+.weatherIcon{
+    width: 3rem ;
+    /* background: red; */
+}
+.description{
+    /* background: gold; */
+    color: rgb(212, 243, 222);
+    font-size: 1.3rem;
+
+}
+.datewrapper{
+    /* background: red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+}
+.react-clock{
+    width: 90px !important;
+    height: 90px !important;
+    margin-right: .7rem;
+}
+.react-clock__face{
+    /* background: red !important; */
+    border: 2px solid rgb(200, 221, 176);
+}
+.react-clock__mark__body{
+    background: rgb(221, 216, 216);
+}
+
+::placeholder {
+    color: rgb(226, 222, 222);
+    font-family: 'Domine', serif;
+    text-shadow:  2px 2px rgba(50,50,70,0.5);    
+    opacity: 1; 
   }
-}
+  
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .btn-location{
+font-size: 1.2rem;
+color: rgb(226, 222, 222);
+font-family: 'Domine', serif;
+text-shadow:  2px 2px rgba(50,50,70,0.5);    
+border: none;
+background: transparent;
   }
-  to {
-    transform: rotate(360deg);
-  }
+.back-btn{
+    color: rgb(189, 83, 189);
+    text-shadow:  2px 2px rgba(50,50,70,0.5);
+margin-left: 1rem;
+border-radius: 50%;
+height: 2rem;
+width: 2rem;
+border-top: 2px solid red;
+border-left: 2px solid rgb(189, 207, 87);
+border-bottom: 2px solid rgb(139, 224, 127);
+border-right: 2px solid rgb(114, 175, 224);
+transition: .3s;
+background: transparent;
+margin-top: 1rem;
+}
+.back-btn:hover{
+    transition: .3s;
+    background: rgb(172, 245, 182);
+    cursor: pointer;
+}
+.date{
+    color: whitesmoke;
+    font-size: 16px;
+}
+.locationwrapper{
+    /* background: #000; */
+    display: flex; 
+    justify-content: center !important; 
+    align-items: center !important;
+}
+.location{    
+    font-size: 26px;
+    padding-top: 1rem;
+    color: rgb(208, 226, 231);
+}
+.temp{
+    border: .7px solid rgb(226, 223, 223);
+    background: rgba(218, 214, 214, 0.527);
+    border-radius: 5px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: .4rem;
+    padding-right: .4rem;
+    /* margin-left: 20%;
+    margin-right: 20%; */
+    font-size: 2.2rem;
+    color: rgb(241, 231, 241);
+
+}
+
+.copyright{
+    font-size: 12px;
+    color: rgb(12, 10, 10);
+    text-shadow:  1px 1px rgba(50,50,70,0.5);
+
+}
+.nasa-section-title{  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;  
+    color: white;
+    font-size: 1.6rem;
+    font-family: 'Didact Gothic', sans-serif;
+    text-shadow:  2px 2px rgba(50,50,70,0.5);
+padding-bottom: .7rem;}
+
+
+.nasa-img{width: 100%;}
+.nasa-description{
+    color: rgb(212, 208, 208);
+        text-shadow:  2px 2px rgba(50,50,70,0.5);
+    padding: .7rem;
+    border-radius: 10px;
+    box-shadow: 1px 2px 5px 3px rgba(0,0,0,0.75);
+    background: linear-gradient(to right, #aa4b6b57, #6b6b833d, #3b8c993b); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.search-bar{
+  color: whitesmoke !important;
+    width: 12rem;
+    height: 2rem;
+    border: .7px solid rgb(226, 223, 223);
+    background: rgba(218, 214, 214, 0.527);
+    border-radius: 5px;
+    margin-bottom: 1.2rem;
+}
+.weather-others{
+    padding-top: .4rem;
+    font-family: 'Domine', serif;
+    color: rgb(241, 231, 241);
+    text-shadow:  2px 2px rgba(50,50,70,0.5);
+
+
+}
+.fontChange{
+    font-family: 'Domine', serif;
+    text-shadow:  2px 2px rgba(50,50,70,0.5);
+}
+
+.fontChange2{
+    font-family: 'Didact Gothic', sans-serif;
+    text-shadow:  2px 2px rgba(50,50,70,0.5);
+
 }
