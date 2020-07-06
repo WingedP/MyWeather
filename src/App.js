@@ -77,7 +77,14 @@ if(!weather || !locationDetail || !nasaResult) return(<div>loading</div>)
   return (
 
 <div className="weatherapp">
-<img className="bgimg" src="/images/firewatch.jpg"></img>
+<div className="bgimg-container"><img className="bgimg" src="/images/firewatch.jpg"></img>
+</div>
+<div className="weatherapp-inner">
+
+
+
+
+
 <div className="weather-section">
 
 <div className="search-box">
@@ -155,6 +162,6 @@ if(!weather || !locationDetail || !nasaResult) return(<div>loading</div>)
   <div className="nasa-description">{nasaResult.explanation}</div>
   </div>
 
-    </div>
+  </div> </div>
   )
 }
